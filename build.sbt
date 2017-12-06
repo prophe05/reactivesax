@@ -3,7 +3,7 @@ description := "Reactive-friendly SAX-like XML parser"
 
 organization in ThisBuild := "io.github.jeremyrsmith"
 version in ThisBuild := "0.1.0"
-scalaVersion in ThisBuild := "2.11.7"
+scalaVersion in ThisBuild := "2.12.4"
 homepage in ThisBuild := Some(url("https://github.com/jeremyrsmith/reactivesax"))
 licenses in ThisBuild += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
 
@@ -31,7 +31,7 @@ val tests = project.settings(
   name := "reactivesax-tests",
   description := "Tests and fixtures for reactivesax",
   libraryDependencies ++= Seq(
-    "org.scalatest" %% "scalatest" % "2.2.4",
-    "org.scalamock" %% "scalamock-scalatest-support" % "3.2"
+    "org.scalatest" %% "scalatest" % "3.0.4",
+    "org.scalamock" %% "scalamock-scalatest-support" % "3.6.0"
   )
 ) dependsOn reactivesax
